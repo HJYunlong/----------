@@ -1,0 +1,92 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+int answeri[16]={0};
+int answerf[16]={0};
+float input;
+int intput;
+float floatput;
+int j = 0;
+int f =0;
+cout<<"Please enter a number : "<<endl;
+cin>>input;
+cout<<endl;
+
+if (input < 0) 
+{
+	answeri[15] = 1;
+	input = input * -1;
+}
+
+
+intput = input;
+floatput = input - intput;
+//int < >folat 
+cout <<input<<endl<<intput<<endl<<floatput<<endl;
+// int start
+while(intput != 1)
+ {
+ 	if(intput%2 == 0)
+ 	{
+ 		answeri[j] = 0;
+ 	}
+ 	if(intput%2 != 0)
+ 	{
+ 		answeri[j] = 1;
+ 	}
+ 	intput = intput/2;
+ 
+ 	j = j + 1;
+ }
+ answeri[j] = 1;
+
+  for(int k = 15; k>=0;k--)
+ {
+ 	if(k == 7 )
+ 	{
+ 		cout<<" ";
+ 	}
+ 	
+ 	cout<<answeri[k];
+ }
+// intger end
+cout<<" .";
+// start folat
+while(floatput != 0)
+ {
+         floatput = floatput * 2 ;
+          if (floatput < 1)
+          {
+        
+          	 answerf[f] = 0;
+          }
+          if (floatput >= 1)
+          {
+        
+          	answerf[f]=1;
+          	floatput = floatput - 1;
+          }
+ 	
+     
+ 	f = f + 1;
+ }
+
+ 
+ 
+for(int l = 0; l<=15;l++)
+ {
+ 	if(l == 8  )
+ 	{
+ 		cout<<" ";
+ 	}
+ 	
+ 	cout<<answerf[l];
+ }
+
+
+
+
+
+}
