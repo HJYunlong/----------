@@ -10,9 +10,30 @@ int intput;
 float floatput;
 int j = 0;
 int f =0;
-cout<<"Please enter a number : "<<endl;
+cout<<"Do you want excute Decimal turn binaries again? "<<endl;
+cout<<"If you stop runing please enter any key (not a number) "<<endl;
+while(1)
+{
+cout<<"Please enter a number :  ";
+input = 0;
+intput = 0;
+floatput = 0;
+for(int p =0;p<=15;p++)
+{
+  answeri[p] = 0;
+  answerf[p] = 0;
+}
+f = 0;
+j= 0;
+
 cin>>input;
 cout<<endl;
+
+if(input == 0)
+{
+  cout<<"Error"<<endl;
+  break;
+}
 
 if (input < 0) 
 {
@@ -24,8 +45,8 @@ if (input < 0)
 intput = input;
 floatput = input - intput;
 //int < >folat 
-cout <<input<<endl<<intput<<endl<<floatput<<endl;
 // int start
+cout<<"The result is :  ";
 while(intput != 1)
  {
  	if(intput%2 == 0)
@@ -84,9 +105,12 @@ for(int l = 0; l<=15;l++)
  	
  	cout<<answerf[l];
  }
+cout<<endl;
+cout<<"======================================"<<endl;
 
 
 
 
+}
 
 }
