@@ -1,4 +1,7 @@
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 using namespace std;
 
 int main ()
@@ -10,8 +13,13 @@ int intput;
 float floatput;
 int j = 0;
 int f =0;
-cout<<"Do you want excute Decimal turn binaries again? "<<endl;
-cout<<"If you stop runing please enter any key (not a number) "<<endl;
+int output = 0;
+int cost = 0 ;
+cout<<"======================================================"<<endl;
+cout<<"Let's  start turn Decimal to binaries~~! ^^  "<<endl;
+cout<<"If you stop runing please < enter any key >  (but not a number) "<<endl;
+cout<<"======================================================"<<endl;
+cout<<endl;
 while(1)
 {
 cout<<"Please enter a number :  ";
@@ -31,7 +39,66 @@ cout<<endl;
 
 if(input == 0)
 {
-  cout<<"Error"<<endl;
+ srand(time(NULL));
+output = rand() % 10;
+switch(output)
+{
+  case 1:
+  {
+  cout<<"Do you want leave me ? QAQ  "<<endl;
+  cout<<"so...sad QAQ"<<endl;
+ break;
+ }  
+ case 2:
+{
+cout<<"====           ===="<<endl;
+cout<<"  ==        =      ==  "<<endl;
+cout<<"  ==     =    =   ==  "<<endl;
+cout<<"  ==  =         = == "<<endl;
+break;
+}  
+  case 3:
+ {
+  cout<<"I will come back!!"<<endl;
+break;
+}
+  case 4:
+ {
+  cout<<"stay with me or I leave with you !!! "<<endl;
+break;
+}
+  case 5:
+ {
+  cout<<"Get out!! Don't use me again!! I hate you!"<<endl;
+break;
+}
+  case 6:
+ {
+ cout<<"goodbye~!! see you next time !  0.0 /"<<endl;
+break;
+}
+ case 7:
+ {
+ cout<<"I will miss you everyday~ <3"<<endl;
+break;
+}
+ case 8:
+ {
+ cout<<"You use me "<<cost<<" times "<<endl;
+ cout<<"You should pay me NT."<<cost*1000<<endl;
+ break;
+}
+case 9:
+{cout<<"Hi~baby give me you phone number before you stop me~"<<endl;
+break;
+}
+
+case 0:
+{
+  cout<<"I...want...tell you...well...any answers what I say....not ture =3="<<endl;
+break;
+}
+ }
   break;
 }
 
@@ -110,7 +177,7 @@ cout<<"======================================"<<endl;
 
 
 
-
+cost ++;
 }
 
 }
